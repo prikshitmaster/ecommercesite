@@ -1,3 +1,5 @@
+import 'package:ecommercesite/theme_data/app_theme.dart';
+import 'package:ecommercesite/widget/drawer.dart';
 import 'package:flutter/material.dart';
 
 class homepage extends StatelessWidget {
@@ -6,14 +8,17 @@ class homepage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(" Home Page "),
-      ),
+      backgroundColor: Colors.white,
+      appBar:AppbarTheme.lighttheme(context),
+
+
       body:  Column(
         children: [
+
         
         ],
       ),
+      drawer: DrawerPage(),
 
     );
   }
